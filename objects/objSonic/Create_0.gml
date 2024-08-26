@@ -7,7 +7,7 @@ sprHop = sprSonicHop
 /// Define character-values
 
 speRun = 4
-speHop = 8
+speHop = 10
 speJump = 6
 
 ///Universal variables

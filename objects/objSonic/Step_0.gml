@@ -17,9 +17,9 @@ if sprite_index = sprHop
 		}
 		else
 		{
-			sprite_index = sprSonic
-			xspeed = 0
+			sprite_index = sprSonicRun
 			image_speed = 1
+			xspeed = image_xscale * speRun
 		}
 	}
 }
