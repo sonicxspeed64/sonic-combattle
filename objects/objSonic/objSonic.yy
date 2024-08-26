@@ -31,7 +31,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"speRun","filters":[],"listItems":[],"multiselect":false,"name":"speRun","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"4","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"speHop","filters":[],"listItems":[],"multiselect":false,"name":"speHop","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"speJump","filters":[],"listItems":[],"multiselect":false,"name":"speJump","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"7","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"speJump","filters":[],"listItems":[],"multiselect":false,"name":"speJump","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"tapDir","filters":[],"listItems":[],"multiselect":false,"name":"tapDir","rangeEnabled":true,"rangeMax":15.0,"rangeMin":-15.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",

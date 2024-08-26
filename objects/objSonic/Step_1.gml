@@ -24,6 +24,7 @@ else
 		xspeed = image_xscale
 		sprite_index = sprHop
 		image_index = 0
+		yspeed = -4
 	}
 	else
 	// basic motion
@@ -51,4 +52,15 @@ else
 			tapDir = 15 * image_xscale
 		}
 	}
+}
+
+if keyboard_check_pressed(ord("Z"))
+{
+	if sprite_index = sprStand or sprite_index = sprRun
+	{
+		sprite_index = sprJump
+		image_index = 0
+		yspeed = -speJump
+	}
+	
 }

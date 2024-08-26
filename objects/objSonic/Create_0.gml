@@ -3,6 +3,9 @@
 sprStand = sprSonic
 sprRun = sprSonicRun
 sprHop = sprSonicHop
+sprJump = sprSonicJump
+	frStartfall = 2
+	frEndfall = 6
 
 ///Universal variables
 
