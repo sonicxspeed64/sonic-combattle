@@ -24,6 +24,7 @@
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"foldsprSonic","folderPath":"folders/Sprites/foldsprSonic.yy","name":"foldsprSonic","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"foldsprMisc","folderPath":"folders/Sprites/foldsprMisc.yy","name":"foldsprMisc","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -35,8 +36,10 @@
   },
   "name":"Sonic Combattle",
   "resources":[
+    {"id":{"name":"objSolid","path":"objects/objSolid/objSolid.yy",},},
     {"id":{"name":"objSonic","path":"objects/objSonic/objSonic.yy",},},
     {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
+    {"id":{"name":"sprSolid","path":"sprites/sprSolid/sprSolid.yy",},},
     {"id":{"name":"sprSonic","path":"sprites/sprSonic/sprSonic.yy",},},
     {"id":{"name":"sprSonicHop","path":"sprites/sprSonicHop/sprSonicHop.yy",},},
     {"id":{"name":"sprSonicRun","path":"sprites/sprSonicRun/sprSonicRun.yy",},},

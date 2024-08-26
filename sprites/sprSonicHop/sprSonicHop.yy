@@ -29,7 +29,7 @@
   ],
   "name":"sprSonicHop",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"foldsprSonic",
     "path":"folders/Sprites/foldsprSonic.yy",
@@ -100,7 +100,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":24,
-    "yorigin":24,
+    "yorigin":21,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
