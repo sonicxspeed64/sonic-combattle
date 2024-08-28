@@ -26,7 +26,7 @@ else
 		xspeed = image_xscale
 		action = "hop"
 		image_index = 0
-		yspeed = -5
+		hoptime = 0
 	}
 	else
 	// basic motion
@@ -34,7 +34,7 @@ else
 		if xspeed = 0
 		{
 			image_xscale = keyboard_check(vk_right) - keyboard_check(vk_left)
-			xspeed = image_xscale * 4
+			xspeed = image_xscale
 			
 			if action = "stand"
 			action = "run"
