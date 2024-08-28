@@ -54,3 +54,5 @@ else if action = "jump"
 sprite_index = sprJump
 else if action = "hop"
 sprite_index = sprHop
+else if action = "squat"
+sprite_index = sprSquat

@@ -71,6 +71,42 @@ else
 	}
 }
 
+if keyboard_check(vk_down)
+{
+	if action = "stand" or action = "run"
+	{
+		action = "squat"
+		image_index = 0
+		image_speed = 0
+	}
+	else if action = "squat"
+	{
+		if image_index < 2
+		{
+		image_index += 0.25
+		xspeed -= sign(xspeed) * 0.25
+		}
+		else
+		{
+			xspeed = 0
+		}
+	}
+}
+else
+{
+	if action = "squat"
+	{
+		if image_index > 0
+		image_index -= 0.25
+		else
+		{
+			action = "stand"
+			image_speed = 1
+		}
+	xspeed = 0
+	}
+}
+
 if keyboard_check_pressed(ord("Z"))
 {
 	if action = "stand" or action = "run"
