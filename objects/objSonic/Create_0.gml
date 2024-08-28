@@ -7,6 +7,10 @@ sprJump = sprSonicJump
 	frStartfall = 2
 	frEndfall = 6
 
+/// Initialize actions
+
+action = "stand"
+
 ///Universal variables
 
 xspeed = 0

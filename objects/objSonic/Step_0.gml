@@ -1,6 +1,6 @@
 /// Actions
 
-if sprite_index = sprHop
+if action = "hop"
 {
 	if image_speed = 1
 	{
@@ -17,7 +17,7 @@ if sprite_index = sprHop
 		}
 		else
 		{
-			sprite_index = sprRun
+			action = "run"
 			image_speed = 1
 			xspeed = image_xscale * speRun
 		}
@@ -26,12 +26,12 @@ if sprite_index = sprHop
 
 if yspeed = 0 and !place_meeting(x,y+1,objSolid)
 {
-	if sprite_index = sprStand or sprite_index = sprRun
+	if action = "stand" or action = "run"
 	{
-	sprite_index = sprJump
+	action = "jump"
 	image_index = frStartfall
 	}
-	else if sprite_index = sprJump or sprite_index = sprHop
+	else if action = "jump" or action = "hop"
 	{
 		yspeed += 0.5
 	}
@@ -40,7 +40,7 @@ else if !place_meeting(x,y+yspeed,objSolid)
 {
 	yspeed += 0.5
 	
-	if sprite_index = sprJump
+	if action = "jump"
 	{
 		if yspeed < 0
 		{

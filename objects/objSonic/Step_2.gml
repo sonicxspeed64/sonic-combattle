@@ -2,7 +2,7 @@
 
 if place_meeting(x+xspeed,y,objSolid)
 {
-	for (k = abs(xspeed); k > 0; k -= 0.25)
+	for (var k = abs(xspeed); k > 0; k -= 0.25)
 	{
 		if !place_meeting(x+sign(xspeed)*k,y,objSolid)
 		{
@@ -30,12 +30,12 @@ if place_meeting(x,y+yspeed,objSolid)
 	
 	yspeed = 0
 	
-	if sprite_index = sprJump
+	if action = "jump"
 	{
 		if xspeed = 0
-		sprite_index = sprStand
+		action = "stand"
 		else
-		sprite_index = sprRun
+		action = "run"
 	}
 }
 else
@@ -43,5 +43,14 @@ y += yspeed
 
 tapDir -= sign(tapDir)
 
-if sprite_index = sprHop
-show_debug_message(y)
+
+///actions to sprites
+
+if action = "stand"
+sprite_index = sprStand
+else if action = "run"
+sprite_index = sprRun
+else if action = "jump"
+sprite_index = sprJump
+else if action = "hop"
+sprite_index = sprHop
