@@ -49,9 +49,15 @@ else
 				image_xscale = keyboard_check(vk_right) - keyboard_check(vk_left)
 				if xspeed * image_xscale < speRun
 				{
-				xspeed += image_xscale
-				if xspeed * image_xscale > speRun
-				xspeed = image_xscale * speRun
+					xspeed += image_xscale
+					if xspeed * image_xscale > speRun
+					xspeed = image_xscale * speRun
+				}
+				else if xspeed * image_xscale > speRun
+				{
+					xspeed -= image_xscale * 0.25
+					if xspeed * image_xscale < speRun
+					xspeed = image_xscale * speRun
 				}
 			
 			if keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left)
@@ -90,6 +96,30 @@ if keyboard_check(vk_down)
 		{
 			xspeed = 0
 		}
+		
+		if keyboard_check_pressed(ord("Z"))
+		{
+			action = "spindash"
+			image_index = 0
+			image_speed = 1
+			xspeed = 0
+			spinrev = 0
+		}
+	}
+	else if action = "spindash"
+	{
+		if keyboard_check_pressed(ord("Z"))
+		{
+			image_index = 0
+			spinrev += 2
+			if spinrev > 8
+			spinrev = 8
+		}
+		else
+		{
+			if spinrev > 0
+			spinrev -= 0.0625
+		}
 	}
 }
 else
@@ -105,6 +135,11 @@ else
 		}
 	xspeed = 0
 	}
+	else if action = "spindash"
+	{
+		action = "spinroll"
+		xspeed = image_xscale * (8 + floor(spinrev) / 2)
+	}
 }
 
 if keyboard_check_pressed(ord("Z"))
@@ -115,5 +150,9 @@ if keyboard_check_pressed(ord("Z"))
 		image_index = 0
 		yspeed = -speJump
 	}
-	
+	else if action = "spinroll"
+	{
+		action = "spinjump"
+		yspeed = -speJump
+	}
 }

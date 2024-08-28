@@ -30,7 +30,7 @@ if place_meeting(x,y+yspeed,objSolid)
 	
 	yspeed = 0
 	
-	if action = "jump"
+	if action = "jump" or action = "spinjump"
 	{
 		if xspeed = 0
 		action = "stand"
@@ -56,3 +56,17 @@ else if action = "hop"
 sprite_index = sprHop
 else if action = "squat"
 sprite_index = sprSquat
+else if action = "spindash"
+{
+	sprite_index = sprSpinDash
+	if image_index = image_number - 1
+	image_index = spinFrame
+}
+else if action = "spinroll"
+{
+	
+}
+else if action = "spinjump"
+{
+	
+}

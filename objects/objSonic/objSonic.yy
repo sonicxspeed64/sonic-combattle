@@ -7,7 +7,9 @@
   ],
   "managed":true,
   "name":"objSonic",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"objAlpharad","path":"objects/objAlpharad/objAlpharad.yy",},"propertyId":{"name":"spinFrame","path":"objects/objAlpharad/objAlpharad.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
+  ],
   "parent":{
     "name":"foldobjCharacters",
     "path":"folders/Objects/foldobjCharacters.yy",
