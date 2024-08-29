@@ -51,6 +51,7 @@
     {"id":{"name":"sprSonicSpinJump","path":"sprites/sprSonicSpinJump/sprSonicSpinJump.yy",},},
     {"id":{"name":"sprSonicSpinRoll","path":"sprites/sprSonicSpinRoll/sprSonicSpinRoll.yy",},},
     {"id":{"name":"sprSonicSquat","path":"sprites/sprSonicSquat/sprSonicSquat.yy",},},
+    {"id":{"name":"sprSonicWall","path":"sprites/sprSonicWall/sprSonicWall.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

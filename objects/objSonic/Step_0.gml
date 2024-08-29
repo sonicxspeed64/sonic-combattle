@@ -26,3 +26,15 @@ if action = "hop"
 	
 	hoptime ++
 }
+else if action = "wall"
+{
+	if spinrev < 0
+	spinrev ++
+	else
+	{
+		image_xscale *= -1
+		action = "walljump"
+		xspeed = speRun * image_xscale
+		yspeed = -speJump
+	}
+}

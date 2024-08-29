@@ -23,6 +23,12 @@ if yspeed = 0 and !place_meeting(x,y+1,objSolid)
 	{
 		yspeed += 0.5
 	}
+	else if action = "walljump"
+	{
+		action = "jump"
+		image_index = frStartfall
+	}
+	
 }
 else if !place_meeting(x,y+yspeed,objSolid)
 {

@@ -52,7 +52,7 @@ else if action = "run"
 sprite_index = sprRun
 else if action = "jump"
 sprite_index = sprJump
-else if action = "hop"
+else if action = "hop" or action = "walljump"
 sprite_index = sprHop
 else if action = "squat"
 sprite_index = sprSquat
@@ -63,10 +63,8 @@ else if action = "spindash"
 	image_index = spinFrame
 }
 else if action = "spinroll"
-{
-	sprite_index = sprSpinRoll
-}
+sprite_index = sprSpinRoll
 else if action = "spinjump"
-{
-	sprite_index = sprSpinJump
-}
+sprite_index = sprSpinJump
+else if action = "wall"
+sprite_index = sprWall

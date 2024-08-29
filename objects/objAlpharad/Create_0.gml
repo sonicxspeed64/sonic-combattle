@@ -10,6 +10,7 @@ sprSquat = sprSonicSquat
 sprSpinDash = sprSonicSpinDash
 sprSpinRoll = sprSonicSpinRoll
 sprSpinJump = sprSonicSpinJump
+sprWall = sprSonicWall
 
 /// Initialize actions
 
