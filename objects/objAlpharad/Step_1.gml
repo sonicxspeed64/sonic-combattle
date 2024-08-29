@@ -12,7 +12,7 @@ if keyboard_check(vk_right) = keyboard_check(vk_left)
 		}
 		else
 		{
-			xspeed -= image_xscale * 0.25
+			xspeed -= sign(xspeed) * 0.25
 		}
 	}
 }
@@ -33,20 +33,25 @@ else
 	{
 		if xspeed = 0
 		{
-			image_xscale = keyboard_check(vk_right) - keyboard_check(vk_left)
-			xspeed = image_xscale
+			if action = "stand" or action = "run" or action = "jump" or action = "spinjump"
+			{
+				image_xscale = keyboard_check(vk_right) - keyboard_check(vk_left)
+				xspeed = image_xscale
 			
-			if action = "stand"
-			action = "run"
+				if action = "stand"
+				action = "run"
 			
-			if keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left)
-			tapDir = 15 * image_xscale
+				if keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left)
+				tapDir = 15 * image_xscale
+			}
+			
 		}
 		else
 		{
 			if action = "run"
 			{
 				image_xscale = keyboard_check(vk_right) - keyboard_check(vk_left)
+				
 				if xspeed * image_xscale < speRun
 				{
 					xspeed += image_xscale

@@ -10,3 +10,5 @@ sprJump = sprSonicJump
 	frEndfall = 6
 sprSquat = sprSonicSquat
 sprSpinDash = sprSonicSpinDash
+sprSpinRoll = sprSonicSpinRoll
+sprSpinJump = sprSonicSpinJump

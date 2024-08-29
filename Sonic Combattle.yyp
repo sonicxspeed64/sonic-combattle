@@ -48,6 +48,8 @@
     {"id":{"name":"sprSonicJump","path":"sprites/sprSonicJump/sprSonicJump.yy",},},
     {"id":{"name":"sprSonicRun","path":"sprites/sprSonicRun/sprSonicRun.yy",},},
     {"id":{"name":"sprSonicSpinDash","path":"sprites/sprSonicSpinDash/sprSonicSpinDash.yy",},},
+    {"id":{"name":"sprSonicSpinJump","path":"sprites/sprSonicSpinJump/sprSonicSpinJump.yy",},},
+    {"id":{"name":"sprSonicSpinRoll","path":"sprites/sprSonicSpinRoll/sprSonicSpinRoll.yy",},},
     {"id":{"name":"sprSonicSquat","path":"sprites/sprSonicSquat/sprSonicSquat.yy",},},
   ],
   "resourceType":"GMProject",

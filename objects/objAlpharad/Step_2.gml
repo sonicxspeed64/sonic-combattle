@@ -64,9 +64,9 @@ else if action = "spindash"
 }
 else if action = "spinroll"
 {
-	
+	sprite_index = sprSpinRoll
 }
 else if action = "spinjump"
 {
-	
+	sprite_index = sprSpinJump
 }
