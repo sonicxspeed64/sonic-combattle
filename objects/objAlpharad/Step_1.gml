@@ -92,14 +92,24 @@ if keyboard_check(vk_down)
 	}
 	else if action = "squat"
 	{
-		if image_index < 2
+		if sprite_index = sprTailsSquat
 		{
-		image_index += 0.25
-		xspeed -= sign(xspeed) * 0.25
+			xspeed = 0
+			image_index += 0.25
+			if image_index = image_number - 0.25
+			image_index = 2
 		}
 		else
 		{
-			xspeed = 0
+			if image_index < 2
+			{
+			image_index += 0.25
+			xspeed -= sign(xspeed) * 0.25
+			}
+			else
+			{
+				xspeed = 0
+			}
 		}
 		
 		if keyboard_check_pressed(ord("Z"))
@@ -139,6 +149,9 @@ else
 			image_speed = 1
 		}
 	xspeed = 0
+	
+	if image_index > 2
+	image_index = 2
 	}
 	else if action = "spindash"
 	{

@@ -1,4 +1,4 @@
-///Sonic-specific
+///Knuckles-specific
 
 event_inherited()
 
