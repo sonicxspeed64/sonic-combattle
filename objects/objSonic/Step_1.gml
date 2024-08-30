@@ -28,7 +28,17 @@ if (action = "jump" or action = "spinjump"
 		}
 		else // jump dash
 		{
-			
+			if spinrev != -1
+			{
+				if keyboard_check(vk_right) != keyboard_check(vk_left)
+				image_xscale = keyboard_check(vk_right) - keyboard_check(vk_left)
+				
+				action = "jumpdash"
+				if xspeed * image_xscale < 6
+				xspeed = image_xscale * 6
+				yspeed = -1
+				spinrev = 12
+			}
 		}
 	}
 }

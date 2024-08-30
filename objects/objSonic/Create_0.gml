@@ -13,3 +13,4 @@ sprSpinDash = sprSonicSpinDash
 sprSpinRoll = sprSonicSpinRoll
 sprSpinJump = sprSonicSpinJump
 sprWall = sprSonicWall
+sprJumpDash = sprSonicJumpDash

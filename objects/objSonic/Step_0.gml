@@ -38,3 +38,16 @@ else if action = "wall"
 		yspeed = -speJump
 	}
 }
+else if action = "jumpdash"
+{
+	if spinrev = 0 or xspeed = 0
+	{
+		action = "spinjump"
+		spinrev = -1
+	}
+	else
+	{
+		if spinrev > 0
+		spinrev --
+	}
+}

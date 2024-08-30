@@ -28,21 +28,29 @@ if place_meeting(x,y+yspeed,objSolid)
 		}
 	}
 	
-	yspeed = 0
-	
-	if action = "jump" or action = "spinjump"
+	if yspeed > 0
 	{
-		if xspeed = 0
-		action = "stand"
-		else
-		action = "run"
+		rev = 0
+		if action = "jump" or action = "spinjump"
+		{
+			if xspeed = 0
+			action = "stand"
+			else
+			action = "run"
+		}
 	}
+	
+	yspeed = 0
 }
 else
 y += yspeed
 
 tapDir -= sign(tapDir)
 
+if place_meeting(x,y+1,objSolid) and !place_meeting(x+image_xscale*10,y+1,objSolid)
+edging = true
+else
+edging = false
 
 ///actions to sprites
 

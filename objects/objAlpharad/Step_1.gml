@@ -144,6 +144,7 @@ else
 	{
 		action = "spinroll"
 		xspeed = image_xscale * (8 + floor(spinrev) / 2)
+		spinrev = 0
 	}
 }
 
