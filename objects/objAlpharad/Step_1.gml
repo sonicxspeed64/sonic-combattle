@@ -2,7 +2,7 @@
 
 if keyboard_check(vk_right) = keyboard_check(vk_left)
 {
-	if action = "run" or action = "jump"
+	if action = "run" or action = "jump" or action = "fly"
 	{
 		if abs(xspeed) < 1
 		{
@@ -33,7 +33,7 @@ else
 	{
 		if xspeed = 0
 		{
-			if action = "stand" or action = "run" or action = "jump" or action = "spinjump"
+			if action = "stand" or action = "run" or action = "jump" or action = "spinjump" or action = "fly"
 			{
 				image_xscale = keyboard_check(vk_right) - keyboard_check(vk_left)
 				xspeed = image_xscale
@@ -68,7 +68,7 @@ else
 			if keyboard_check_pressed(vk_right) or keyboard_check_pressed(vk_left)
 			tapDir = 15 * image_xscale
 			}
-			else if action = "jump"
+			else if action = "jump" or action = "fly"
 			{
 				var goin = keyboard_check(vk_right) - keyboard_check(vk_left)
 				if xspeed * goin < speRun
@@ -77,6 +77,9 @@ else
 					if xspeed * goin > speRun
 					xspeed = goin * speRun
 				}
+				
+				if (goin = -1 and xspeed <= -1) or (goin = 1 and xspeed >= 1)
+				image_xscale = goin
 			}
 		}
 	}

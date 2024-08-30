@@ -10,7 +10,7 @@ sprSquat = sprTailsSquat
 sprSpinDash = sprTailsSpinDash
 sprSpinRoll = sprTailsSpinRoll
 sprSpinJump = sprTailsSpinJump
-sprFly = sprKnucklesSquat
+sprFly = sprTailsFly
 
 tdir = 0
 prevx = x

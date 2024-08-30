@@ -16,5 +16,7 @@ if (action = "jump" or action = "spinjump")
 		image_xscale = dircheck
 		
 		action = "fly"
+		image_index = 0
+		yspeed -= speJump
 	}
 }

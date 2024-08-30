@@ -68,6 +68,7 @@
     {"id":{"name":"sprSonicSquat","path":"sprites/sprSonicSquat/sprSonicSquat.yy",},},
     {"id":{"name":"sprSonicWall","path":"sprites/sprSonicWall/sprSonicWall.yy",},},
     {"id":{"name":"sprTails","path":"sprites/sprTails/sprTails.yy",},},
+    {"id":{"name":"sprTailsFly","path":"sprites/sprTailsFly/sprTailsFly.yy",},},
     {"id":{"name":"sprTailsHop","path":"sprites/sprTailsHop/sprTailsHop.yy",},},
     {"id":{"name":"sprTailsJump","path":"sprites/sprTailsJump/sprTailsJump.yy",},},
     {"id":{"name":"sprTailsRun","path":"sprites/sprTailsRun/sprTailsRun.yy",},},

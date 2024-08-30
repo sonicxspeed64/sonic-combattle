@@ -32,6 +32,7 @@ if yspeed = 0 and !place_meeting(x,y+1,objSolid)
 }
 else if !place_meeting(x,y+yspeed,objSolid)
 {
+	if action != "fly"
 	yspeed += 0.5
 	
 	if action = "jump" or action = "spinjump"
